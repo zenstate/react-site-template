@@ -1,0 +1,14 @@
+{
+    "parser": "babel-eslint",
+    "rules": {},
+    "extends": [
+        "airbnb"
+    ],
+    "plugins": [
+        "jest",
+        "react-hooks"
+    ],
+    "env": {
+        "jest/globals": true
+    }
+}

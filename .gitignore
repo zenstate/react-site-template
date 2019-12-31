@@ -1,0 +1,6 @@
+node_modules
+**/*.local.conf.js
+dist
+dev
+*.log
+.DS_Store

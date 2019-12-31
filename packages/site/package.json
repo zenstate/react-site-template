@@ -1,0 +1,74 @@
+{
+  "name": "@zenstate/site-template-client",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Liam McLaughlin",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "cd dist && node site-template-server.js",
+    "lint": "./node_modules/.bin/eslint \"./*.{js,jsx}\"",
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watch",
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/babel-node ./src/server/server.dev.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "autoprefixer": "^9.7.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.6.1",
+    "css-loader": "^3.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.2.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.5.3",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-svgo": "^7.0.0",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "terser-webpack-plugin": "^2.3.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE >= 8",
+    "Edge >= 16",
+    "safari >= 8",
+    "not dead"
+  ],
+  "dependencies": {
+    "@types/react": "^16.9.17",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(jsx|js)?$": "babel-jest"
+    }
+  }
+}

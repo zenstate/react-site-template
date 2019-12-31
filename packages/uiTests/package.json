@@ -1,0 +1,25 @@
+{
+  "name": "@zenstate/site-template-uitests",
+  "version": "0.0.1",
+  "description": "A set of generic puppeteer tests",
+  "main": "index.js",
+  "author": "Liam McLaughlin",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/jest ./scripts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "jest": "^24.9.0",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.0.0"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
